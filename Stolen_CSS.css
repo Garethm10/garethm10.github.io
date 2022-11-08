@@ -24,6 +24,7 @@ h1 {
 h3 {
    text-align: center;
    color: #a8a8a8;
+   @include text-shadow(1px 1px 0 rgba(white, 1));
 }
 
 form {
