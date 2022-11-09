@@ -14,11 +14,11 @@
 	<br><br/>
 	<input type="text" id="input-budget" placeholder="Current Budget">
 	<br><br/>
-	<input type="text" id="input-CatIntake" placeholder="Yearly Cat Intake">
+	<input type="number" id="input-CatIntake" placeholder="Yearly Cat Intake">
 	<br><br/>
-	<input type="text" id="input-DogIntake" placeholder="Yearly Dog Intake">
+	<input type="number" id="input-DogIntake" placeholder="Yearly Dog Intake">
 	<br><br/>
-	<input type="text" id="input-HumanPop" placeholder="Human Population">
+	<input type="number" id="input-HumanPop" placeholder="Human Population">
 	<br><br/>
 	<input type="text" id="input-LowestWage" placeholder="Lowest Employee Wage">
   </div>
@@ -36,7 +36,9 @@
 	   <script>
 		  function myFunc(){
 			var name = document.getElementById('input-name').value;
-			 alert("You're a silly goober named " + name);
+			var cats = document.getElementById('input-CatIntake').value;
+			var dogs = document.getElementById('input-DogIntake').value;
+			 alert("You're a silly goober named " + name + " and there are " + (dogs - cats) + " more dogs than cats" );
 		  }
 	   </script>
   </div>  
