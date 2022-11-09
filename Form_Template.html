@@ -21,9 +21,7 @@
 	<input type="number" id="input-HumanPop" placeholder="Human Population">
 	<br><br/>
 	<input type="text" id="input-LowestWage" placeholder="Lowest Employee Wage">
-  </div>
-  <div class="half right cf">
-	<h3>Outputs</h3>
+	<br></br>
 	<input type="text" id="input-DogKennelsOnsite" placeholder="Dog Kennels Onsite">
 	<br><br/>
 	<input type="text" id="input-CatCapacityOnsite" placeholder="Ideal Cat Capacity">
@@ -39,8 +37,13 @@
 			var cats = document.getElementById('input-CatIntake').value;
 			var dogs = document.getElementById('input-DogIntake').value;
 			 alert("You're a silly goober named " + name + " and there are " + (dogs - cats) + " more dogs than cats" );
+			 document.getElementById('output-MoreDogsThanCats').value = (dogs - cats)
 		  }
 	   </script>
+  </div>
+  <div class="half right cf">
+	<h3>Outputs</h3>
+	<input type="text" id="output-MoreDogsThanCats" placeholder="# of dogs - # of cats">
   </div>  
   <input type="submit" value="Submit" id="input-submit">
 </form>
