@@ -29,7 +29,8 @@ h3 {
 
 h6 {
    text-align: left;
-   padding: 10px;
+   margin: 0;
+   padding: 0;
    color: #a8a8a8;
    @include text-shadow(1px 1px 0 rgba(white, 1));
 }
