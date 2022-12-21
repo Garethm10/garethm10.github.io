@@ -11,5 +11,5 @@ function myFunc(){
 function totalPets(){
     var cats = document.getElementById('input-CatIntake').value;
     var dogs = document.getElementById('input-DogIntake').value;
-    document.getElementById('input-PetIntake').value = (dogs + cats);
+    document.getElementById('input-PetIntake').value = (+dogs + +cats);
   }
