@@ -7,3 +7,9 @@ function myFunc(){
      alert("You're a silly goober named " + name + " and there are " + (dogs - cats) + " more dogs than cats" );
      document.getElementById('output-MoreDogsThanCats').value = (dogs - cats);
   }
+
+function totalPets(){
+    var cats = document.getElementById('input-CatIntake').value;
+    var dogs = document.getElementById('input-DogIntake').value;
+    document.getElementById('input-PetIntake').value = (dogs + cats);
+  }
