@@ -46,14 +46,15 @@
       }
 
       function auth() {
-        gapi.auth.authorize(config, function() {
-            gapi.client.load('bigquery', 'v2');
-            $('#client_initiated').html('BigQuery client initiated');
-            $('#auth_button').fadeOut();
-            $('#projects_button').fadeIn();
-            $('#dataset_button').fadeIn();
-            $('#query_button').fadeIn();
-        });
+		requestAccessToken();
+        //gapi.auth.authorize(config, function() {
+            //gapi.client.load('bigquery', 'v2');
+            //$('#client_initiated').html('BigQuery client initiated');
+            //$('#auth_button').fadeOut();
+            //$('#projects_button').fadeIn();
+            //$('#dataset_button').fadeIn();
+            //$('#query_button').fadeIn();
+        //});
       }
 
     </script>
