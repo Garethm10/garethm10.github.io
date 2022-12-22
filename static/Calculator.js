@@ -1,5 +1,4 @@
 
-
 function myFunc(){
     var name = document.getElementById('input-name').value;
     var cats = document.getElementById('input-CatIntake').value;
